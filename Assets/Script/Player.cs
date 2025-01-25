@@ -14,7 +14,11 @@ public class Player : MonoBehaviour
 
     //bool isFacingLeft = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
