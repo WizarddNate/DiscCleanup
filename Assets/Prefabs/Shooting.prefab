@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6083808120018859788}
   - component: {fileID: -489495673574238912}
   - component: {fileID: -5101183677810382144}
+  - component: {fileID: 1128074348375541763}
   m_Layer: 0
   m_Name: Shooting
   m_TagString: Untagged
@@ -119,6 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5c26a3ab200fd48b1b3aa3c0bc5fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibleTime: 0.5
+  numOfFlashes: 2
+  flashColor: {r: 0.07924521, g: 0.07580627, b: 0.0790075, a: 0}
 --- !u!61 &-5101183677810382144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,6 +169,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1128074348375541763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66670065908903004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1515701bc62df648899ebe29174648f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hit: 0
+  isFlashing: 0
 --- !u!1 &6986767771715367621
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,4 +22,8 @@ public class EnemyStats : MonoBehaviour
                 }
             }
         };
+
+    public float invincibleTime = 1.5f, numOfFlashes = 3f;
+
+    [SerializeField] public Color flashColor;
 }
