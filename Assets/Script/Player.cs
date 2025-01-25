@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     Vector2 velocity;
     float inputHorizontal; //used to flip sprite
 
+    public GameObject gunPrefab;
+
     //bool isFacingLeft = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,10 +37,9 @@ public class Player : MonoBehaviour
         {
             gameObject.transform.localScale = new Vector3(-1, 2, 1);
         }
-
     }
 
-    void Flip()
+    public void PickupGun(GameObject obj)
     {
 
     }
