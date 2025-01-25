@@ -15,6 +15,8 @@ public class GunContainerScript : MonoBehaviour
     {
         //Make ObjectA's position match objectB
          gameObject.transform.position = Player.position;
+
+        
     }
     public void DestroyAllChildren()
     {
