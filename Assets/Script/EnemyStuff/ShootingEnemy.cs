@@ -5,6 +5,8 @@ public class ShootingEnemy : MonoBehaviour
     float health;
     float speed;
     EnemyStats stats;
+    SpriteFlasher flasher;
+
 
     public GameObject deathEffect;
     public float range = 10f;
@@ -20,7 +22,7 @@ public class ShootingEnemy : MonoBehaviour
         stats = GetComponent<EnemyStats>();
         health = stats.stats["chaser"]["health"];
         speed = stats.stats["chaser"]["speed"];
-
+        flasher = GetComponent<SpriteFlasher>();
     }
 
     private void Update()
@@ -36,10 +38,6 @@ public class ShootingEnemy : MonoBehaviour
                 Shoot();
             }
         }
-        if (health <= 0)
-        {
-            Object.Destroy(gameObject);
-        }
     }
     void Shoot()
     {
@@ -49,9 +47,10 @@ public class ShootingEnemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerBullet"))
+        if (other.CompareTag("PlayerBullet") && !flasher.isFlashing)
         {
-            //Debug.Log("hit");
+            Debug.Log("HIT");
+            StartCoroutine(flasher.Flash(stats.invincibleTime, stats.flashColor, stats.numOfFlashes));
             health -= 5;
             Object.Destroy(other.gameObject);
         }
