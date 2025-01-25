@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
             //Debug.Log("HIT");
             StartCoroutine(flasher.Flash(stats.invincibleTime, stats.flashColor, stats.numOfFlashes));
             health -= 5;
+            speed /= 2;
             Object.Destroy(other.gameObject);
         }
         if (health <= 0)
