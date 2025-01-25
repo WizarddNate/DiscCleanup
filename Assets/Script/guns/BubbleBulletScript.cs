@@ -23,4 +23,6 @@ public class BubbleBulletScript : MonoBehaviour
             Object.Destroy(gameObject);
         }
     }
+
+    
 }
