@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("SHDIH");
         }
-        if (other.CompareTag("EnemyBullet") && !flasher.isFlashing || other.CompareTag("Enemy")
+        if (other.CompareTag("EnemyBullet") && !flasher.isFlashing || other.CompareTag("Enemy"))
         {
             
             health -= 1;
