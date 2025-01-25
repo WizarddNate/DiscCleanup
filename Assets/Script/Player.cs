@@ -5,8 +5,13 @@ public class Player : MonoBehaviour
 {
 
     public float moveSpeed = 5.0f;
+
     Rigidbody2D rb;
     Vector2 velocity;
+    float inputHorizontal; //used to flip sprite
+
+    //bool isFacingLeft = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,14 +23,23 @@ public class Player : MonoBehaviour
     {
         velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.linearVelocity = velocity.normalized * moveSpeed;
+
+        //get horizontal movement input to be able to flip the character
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+
+        if (inputHorizontal > 0) //move right
+        {
+            gameObject.transform.localScale = new Vector3(1, 2, 1);
+        }
+        if (inputHorizontal < 0) //move left
+        {
+            gameObject.transform.localScale = new Vector3(-1, 2, 1);
+        }
+
     }
 
     void Flip()
     {
-        //this line needs to change to something like,, y = -1 or y = +1. This is just test code.
-        if (Keyboard.current.downArrowKey.wasPressedThisFrame)
-        {
-            transform.Rotate(0, 180, 0);
-        }
+
     }
 }
