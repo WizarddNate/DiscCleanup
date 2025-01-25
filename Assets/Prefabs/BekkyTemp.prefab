@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5224297033549904174}
   - component: {fileID: 9032553531412929239}
   - component: {fileID: 4983539561431306321}
+  - component: {fileID: 8497463065231958893}
   m_Layer: 0
   m_Name: BekkyTemp
   m_TagString: Player
@@ -177,3 +178,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8497463065231958893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952079154640005917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1515701bc62df648899ebe29174648f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hit: 0
+  isFlashing: 0

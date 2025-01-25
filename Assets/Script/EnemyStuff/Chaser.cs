@@ -24,13 +24,12 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         this.transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-       
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("PlayerBullet") && !flasher.isFlashing)
         {
-            Debug.Log("HIT");
+            //Debug.Log("HIT");
             StartCoroutine(flasher.Flash(stats.invincibleTime, stats.flashColor, stats.numOfFlashes));
             health -= 5;
             Object.Destroy(other.gameObject);

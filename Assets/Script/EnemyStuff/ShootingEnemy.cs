@@ -49,7 +49,7 @@ public class ShootingEnemy : MonoBehaviour
     {
         if (other.CompareTag("PlayerBullet") && !flasher.isFlashing)
         {
-            Debug.Log("HIT");
+            //Debug.Log("HIT");
             StartCoroutine(flasher.Flash(stats.invincibleTime, stats.flashColor, stats.numOfFlashes));
             health -= 5;
             Object.Destroy(other.gameObject);

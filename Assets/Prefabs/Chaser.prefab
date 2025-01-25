@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8614089180778733449}
   m_Layer: 0
   m_Name: Chaser
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5c26a3ab200fd48b1b3aa3c0bc5fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invincibleTime: 1.5
+  numOfFlashes: 3
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &-8614089180778733449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +177,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1515701bc62df648899ebe29174648f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: 0
+  isFlashing: 0
