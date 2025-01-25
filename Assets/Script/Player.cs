@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -17,5 +18,14 @@ public class Player : MonoBehaviour
     {
         velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.linearVelocity = velocity.normalized * moveSpeed;
+    }
+
+    void Flip()
+    {
+        //this line needs to change to something like,, y = -1 or y = +1. This is just test code.
+        if (Keyboard.current.downArrowKey.wasPressedThisFrame)
+        {
+            transform.Rotate(0, 180, 0);
+        }
     }
 }
