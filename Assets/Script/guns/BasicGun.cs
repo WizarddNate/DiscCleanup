@@ -21,13 +21,14 @@ public class BasicGun : MonoBehaviour
     public Vector3 mousePos;
 
     //check if gun is being actively held
-    private bool isGunBeingHeld = false;
+    private bool isGunBeingHeld;
 
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        isGunBeingHeld = false;
 
-    }
+}
 
     private void Update()
     {
@@ -55,7 +56,7 @@ public class BasicGun : MonoBehaviour
         }
     }
 
-    public void Activate(GameObject obj)
+    public void Activate()
     {
         isGunBeingHeld = true;
     }

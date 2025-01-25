@@ -4,17 +4,67 @@ using UnityEngine.InputSystem;
 
 public class Pickup : MonoBehaviour
 {
-    //pick up gun
+    // vars //
+
+    //make gun container a game object so it can be made into the parent object
+    public GameObject parentContainer;
+
+    //reference gun containter script
+    public GunContainerScript gunContainter;
+
+    //reference basic gun script
+    public BasicGun basicGun;
+
+    //box gun's collider
+    public BoxCollider2D collider;
+
+    //check if a gun is already being held
+    private static bool gunEquipped; 
+
+    private void Start()
+    {
+        if (!gunEquipped)
+        {
+            //BasicGun.enabled = false;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Player manager = collision.GetComponent<Player>();
-        if (manager != null)
+        if (collision.tag == "Player")
         {
-
-            //make script on basic gun where the object is glued to bekky and isHeld == true
-            //manager.pickupGun(gameObject);
-            manager.PickupGun(gameObject);
-            Destroy(gameObject);
+            if (gunEquipped == true)
+            {
+                DestroyOldGun();
+            }
+            //disable box collider
+            collider.enabled = false;
+            PickUp();
+            Debug.Log("pick up!");
         }
+    }
+
+    private void PickUp()
+    {
+        //become child of gun container
+        gameObject.transform.SetParent(parentContainer.transform);
+
+        //gun isBeingHeld = true 
+        basicGun.Activate();
+
+        //equipped = true
+        gunEquipped = true;
+    }
+
+    private void DestroyOldGun()
+    {
+        //call function in gun container to destroy all children
+        gunContainter.DestroyAllChildren();
+
+        //equipped = false
+        gunEquipped = false;
+
+
+        //Debug.Log("Old Gun Destroyed");
     }
 }
