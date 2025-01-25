@@ -60,14 +60,18 @@ public class Player : MonoBehaviour
         {
             Debug.Log("SHDIH");
         }
-        if (other.CompareTag("EnemyBullet") && !flasher.isFlashing || other.CompareTag("Enemy")
+        if (other.CompareTag("EnemyBullet") && !flasher.isFlashing)
         {
             
             health -= 1;
             StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
             Object.Destroy(other.gameObject);
         }
-
+        else if (other.CompareTag("Enemy") && !flasher.isFlashing)
+        {
+            health -= 1;
+            StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
+        }
         if (health <= 0)
         {
             Debug.Log("DEAD");
