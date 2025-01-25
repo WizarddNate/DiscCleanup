@@ -102,9 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b980b38809a4d6459d194e23b619153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 0
-  player: {fileID: 7602343317897297754, guid: ac34f56820afd7a47b19fbc6df38b900, type: 3}
+  deathEffect: {fileID: 7271039455280795760, guid: e851eab27402df74fb53c799567194cb, type: 3}
 --- !u!61 &3769682272702154506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,5 +161,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5c26a3ab200fd48b1b3aa3c0bc5fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 5
