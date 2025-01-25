@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
 {
+    float health;
+    float speed;
+    EnemyStats stats;
+
     public GameObject bullet;
     public Transform bulletPos;
     GameObject player;
@@ -11,6 +15,10 @@ public class ShootingEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        stats = GetComponent<EnemyStats>();
+        health = stats.stats["chaser"]["health"];
+        speed = stats.stats["chaser"]["speed"];
+
     }
 
     private void Update()
