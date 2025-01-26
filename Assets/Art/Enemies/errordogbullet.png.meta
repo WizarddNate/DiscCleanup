@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 5719723fed3809347a5c371490021830
+guid: e16f75cac5ed3184480bef97772839e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7761185067478789939
-    second: LuvBugAttack_0
+      213: -2287557313696308418
+    second: errordogbullet_0
   - first:
-      213: -940019905806969999
-    second: LuvBugAttack_1
+      213: 6029228831542361466
+    second: errordogbullet_1
   - first:
-      213: -2944817232118776415
-    second: LuvBugAttack_2
+      213: 6761359366332148306
+    second: errordogbullet_2
   - first:
-      213: 607996071425009408
-    second: LuvBugAttack_3
+      213: 1296355813912692508
+    second: errordogbullet_3
   - first:
-      213: -4230345045117022217
-    second: LuvBugAttack_4
+      213: -7941916207145820272
+    second: errordogbullet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LuvBugAttack_0
+      name: errordogbullet_0
       rect:
         serializedVersion: 2
-        x: 82
-        y: 652
-        width: 338
-        height: 260
+        x: 92
+        y: 206
+        width: 67
+        height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33fa327c2b445bb60800000000000000
-      internalID: 7761185067478789939
+      spriteID: e33e8c14eb6f040e0800000000000000
+      internalID: -2287557313696308418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LuvBugAttack_1
+      name: errordogbullet_1
       rect:
         serializedVersion: 2
-        x: 598
-        y: 643
-        width: 319
-        height: 288
+        x: 162
+        y: 228
+        width: 78
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 173549840e064f2f0800000000000000
-      internalID: -940019905806969999
+      spriteID: a7d30a59daf1ca350800000000000000
+      internalID: 6029228831542361466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LuvBugAttack_2
+      name: errordogbullet_2
       rect:
         serializedVersion: 2
-        x: 1113
-        y: 633
-        width: 308
-        height: 311
+        x: 248
+        y: 241
+        width: 66
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ad7c176458e127d0800000000000000
-      internalID: -2944817232118776415
+      spriteID: 25aecfc358c25dd50800000000000000
+      internalID: 6761359366332148306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LuvBugAttack_3
+      name: errordogbullet_3
       rect:
         serializedVersion: 2
-        x: 86
-        y: 131
-        width: 319
-        height: 288
+        x: 311
+        y: 255
+        width: 58
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 007ee16a439007800800000000000000
-      internalID: 607996071425009408
+      spriteID: c1747ce8eb49df110800000000000000
+      internalID: 1296355813912692508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LuvBugAttack_4
+      name: errordogbullet_4
       rect:
         serializedVersion: 2
-        x: 594
-        y: 140
-        width: 338
-        height: 260
+        x: 372
+        y: 252
+        width: 95
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ff4774489bca45c0800000000000000
-      internalID: -4230345045117022217
+      spriteID: 09fd725a945a8c190800000000000000
+      internalID: -7941916207145820272
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LuvBugAttack_0: 7761185067478789939
-      LuvBugAttack_1: -940019905806969999
-      LuvBugAttack_2: -2944817232118776415
-      LuvBugAttack_3: 607996071425009408
-      LuvBugAttack_4: -4230345045117022217
+      errordogbullet_0: -2287557313696308418
+      errordogbullet_1: 6029228831542361466
+      errordogbullet_2: 6761359366332148306
+      errordogbullet_3: 1296355813912692508
+      errordogbullet_4: -7941916207145820272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
