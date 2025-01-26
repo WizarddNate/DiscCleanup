@@ -129,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -174,6 +174,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -181,10 +194,10 @@ TextureImporter:
       name: errordog_0
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 1457
-        width: 26
-        height: 48
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +216,10 @@ TextureImporter:
       name: errordog_1
       rect:
         serializedVersion: 2
-        x: 1370
-        y: 1459
-        width: 91
-        height: 53
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +238,10 @@ TextureImporter:
       name: errordog_2
       rect:
         serializedVersion: 2
-        x: 1465
-        y: 1455
-        width: 35
-        height: 51
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +260,10 @@ TextureImporter:
       name: errordog_3
       rect:
         serializedVersion: 2
-        x: 1871
-        y: 1460
-        width: 30
-        height: 45
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +282,10 @@ TextureImporter:
       name: errordog_4
       rect:
         serializedVersion: 2
-        x: 1904
-        y: 1460
-        width: 58
-        height: 50
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +304,10 @@ TextureImporter:
       name: errordog_5
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1207
-        width: 346
-        height: 251
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,19 +326,19 @@ TextureImporter:
       name: errordog_6
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1093
-        width: 234
-        height: 157
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 98790059377fcbf40800000000000000
+      spriteID: 3f0aa2d01da73414587bc967f12a29c1
       internalID: 5745739300411053961
       vertices: []
       indices: 
@@ -335,19 +348,19 @@ TextureImporter:
       name: errordog_7
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1207
-        width: 350
-        height: 251
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 001dc88b94b75dd00800000000000000
+      spriteID: 58707b65b06dce74bb9631dc1221061b
       internalID: 996838449091498240
       vertices: []
       indices: 
@@ -357,19 +370,19 @@ TextureImporter:
       name: errordog_8
       rect:
         serializedVersion: 2
-        x: 644
-        y: 1093
-        width: 234
-        height: 157
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90efa57684f04aae0800000000000000
+      spriteID: baaf7df6f85edd748bf2cc0b1466e49a
       internalID: -1539088369007788535
       vertices: []
       indices: 
@@ -379,394 +392,20 @@ TextureImporter:
       name: errordog_9
       rect:
         serializedVersion: 2
-        x: 1075
-        y: 1207
-        width: 404
-        height: 251
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fb4b41929da86f5b0800000000000000
+      spriteID: 53fd723373cecd142af1c57527587df1
       internalID: -5334924043272014657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_10
-      rect:
-        serializedVersion: 2
-        x: 1108
-        y: 1077
-        width: 296
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e9d73a78f3b5da60800000000000000
-      internalID: 7698257017843472868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_11
-      rect:
-        serializedVersion: 2
-        x: 1587
-        y: 1207
-        width: 404
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6434dbecb7a558c50800000000000000
-      internalID: 6666834311187874630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_12
-      rect:
-        serializedVersion: 2
-        x: 1643
-        y: 1076
-        width: 273
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7f419b8f4e3c7e090800000000000000
-      internalID: -8005214424434928393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_13
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 1079
-        width: 28
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e18788a74f1e2cd90800000000000000
-      internalID: -7078847224128964578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_14
-      rect:
-        serializedVersion: 2
-        x: 1611
-        y: 1067
-        width: 33
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: badcccfd266255de0800000000000000
-      internalID: -1345126707596833365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_15
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 695
-        width: 350
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3015e6cb86b39ad30800000000000000
-      internalID: 4443147828401688835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_16
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 581
-        width: 233
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 733055113e2a21fb0800000000000000
-      internalID: -4678497966752464073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_17
-      rect:
-        serializedVersion: 2
-        x: 563
-        y: 695
-        width: 404
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f378b2ff788a2720800000000000000
-      internalID: 2822218199615435766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_18
-      rect:
-        serializedVersion: 2
-        x: 619
-        y: 581
-        width: 273
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 261a49849e0a08c90800000000000000
-      internalID: -7169553682968305310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_19
-      rect:
-        serializedVersion: 2
-        x: 1107
-        y: 695
-        width: 326
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5212676fbc605c690800000000000000
-      internalID: -7582646924525297371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_20
-      rect:
-        serializedVersion: 2
-        x: 1157
-        y: 581
-        width: 223
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: debfb4ec799acb630800000000000000
-      internalID: 3944213843135953901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_21
-      rect:
-        serializedVersion: 2
-        x: 1619
-        y: 695
-        width: 326
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39a86144c1ea1ef30800000000000000
-      internalID: 4603151730574002835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_22
-      rect:
-        serializedVersion: 2
-        x: 1669
-        y: 581
-        width: 223
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 382bec94a1a723f30800000000000000
-      internalID: 4553836426551014019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_23
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 183
-        width: 326
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfd06136720d80f30800000000000000
-      internalID: 4542109091787836924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_24
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 69
-        width: 223
-        height: 141
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 314cc3c6efe405010800000000000000
-      internalID: 1175526357388280851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_25
-      rect:
-        serializedVersion: 2
-        x: 595
-        y: 183
-        width: 326
-        height: 251
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7a6af0b088c5fd50800000000000000
-      internalID: 6770538069871979133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: errordog_26
-      rect:
-        serializedVersion: 2
-        x: 645
-        y: 69
-        width: 222
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fc6706572ce76ef0800000000000000
-      internalID: -114863611783451399
       vertices: []
       indices: 
       edges: []
@@ -775,7 +414,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 307c7a3c2b051c44bae88e2c9eed25c5
     internalID: 0
     vertices: []
     indices: 
@@ -787,24 +426,7 @@ TextureImporter:
     nameFileIdTable:
       errordog_0: -2594909922290775763
       errordog_1: -1923257514542730171
-      errordog_10: 7698257017843472868
-      errordog_11: 6666834311187874630
-      errordog_12: -8005214424434928393
-      errordog_13: -7078847224128964578
-      errordog_14: -1345126707596833365
-      errordog_15: 4443147828401688835
-      errordog_16: -4678497966752464073
-      errordog_17: 2822218199615435766
-      errordog_18: -7169553682968305310
-      errordog_19: -7582646924525297371
       errordog_2: 5110304781050958619
-      errordog_20: 3944213843135953901
-      errordog_21: 4603151730574002835
-      errordog_22: 4553836426551014019
-      errordog_23: 4542109091787836924
-      errordog_24: 1175526357388280851
-      errordog_25: 6770538069871979133
-      errordog_26: -114863611783451399
       errordog_3: -7894370573463806454
       errordog_4: 4866767018990670293
       errordog_5: 4304397784242847662

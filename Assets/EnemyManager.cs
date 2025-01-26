@@ -33,7 +33,7 @@ public class EnemyManager : MonoBehaviour
     {
         
         //Debug.Log($"count: {enemiesList.Count}");
-        if (total == 0)
+        if (total <= 0)
         {
             //when list is empty, levelBeat = true
             isLevelBeat = true;
