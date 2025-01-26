@@ -5,8 +5,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    private 
-
 
 
     void Awake()
@@ -25,7 +23,16 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name == "Level6")
+        {
+            SceneManager.LoadSceneAsync("WinScreen");
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
 }
