@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
 
     public float moveSpeed = 5.0f;
-    int hearts = 3;
+    int maxhearts = 3;
     Rigidbody2D rb;
     Vector2 velocity;
     float inputHorizontal; //used to flip sprite
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
-        health.health = hearts;
+        health.health = maxhearts;
         flasher = GetComponent<SpriteFlasher>();
     }
 
@@ -68,6 +68,18 @@ public class Player : MonoBehaviour
         {
             health.health -= 1;
             StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
+        }
+        else if (other.CompareTag("Medkit"))
+        {
+            if (health.health == maxhearts)
+            {
+                Object.Destroy(other.gameObject);
+            }
+            else
+            {
+                health.health += 1;
+                Object.Destroy(other.gameObject);
+            }
         }
         if (health.health <= 0)
         {

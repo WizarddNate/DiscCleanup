@@ -1581,6 +1581,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 7189042935056614310, guid: 873a2ed462433fe489cbdde7b9d415a2, type: 3}
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: -5043840584736706038, guid: f98639b41f4ae4748b2cd328f92aef85, type: 3}
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: heart.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: 'heart.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1558626806}
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: 'heart.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1674261916}
+    - target: {fileID: -1100381930414669018, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: 'heart.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2092885350}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2389,7 +2413,7 @@ SceneRoots:
   - {fileID: 315721372}
   - {fileID: 889342783}
   - {fileID: 493169630}
-  - {fileID: 1202752649}
   - {fileID: 1538972227}
   - {fileID: 1723060326}
   - {fileID: 1435834524}
+  - {fileID: 1202752649}

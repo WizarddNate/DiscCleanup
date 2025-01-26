@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.095
       objectReference: {fileID: 0}
+    - target: {fileID: 4897818243373534536, guid: e28cdfc5c7d806247b08e7508621f2da, type: 3}
+      propertyPath: medkit
+      value: 
+      objectReference: {fileID: 5887013884261377791, guid: 3df65954c3c0af848a626ce47ef2328e, type: 3}
     - target: {fileID: 6918595099416652329, guid: e28cdfc5c7d806247b08e7508621f2da, type: 3}
       propertyPath: m_Name
       value: Chaser_Bird Variant

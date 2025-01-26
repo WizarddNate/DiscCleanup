@@ -42,7 +42,7 @@ public class EnemyStats : MonoBehaviour
                 new Dictionary< string , float>
                 {
                     {"health", 5f },
-                    {"speed", 1f}
+                    {"speed", .2f}
                 }
             }
         };

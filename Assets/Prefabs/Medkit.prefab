@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6918595099416652329
+--- !u!1 &5887013884261377791
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 744389746674897539}
-  - component: {fileID: 2824108038830859297}
-  - component: {fileID: 4897818243373534536}
-  - component: {fileID: 3769682272702154506}
-  - component: {fileID: 413267211908270523}
-  - component: {fileID: -8614089180778733449}
+  - component: {fileID: 1330487368381582730}
+  - component: {fileID: 2093519148274247442}
+  - component: {fileID: 8013828054503468377}
   m_Layer: 0
-  m_Name: Chaser
-  m_TagString: Enemy
+  m_Name: Medkit
+  m_TagString: Medkit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &744389746674897539
+--- !u!4 &1330487368381582730
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
+  m_GameObject: {fileID: 5887013884261377791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.8866, y: -0.8515, z: 0}
+  m_LocalScale: {x: 0.395, y: 0.4132, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2824108038830859297
+--- !u!212 &2093519148274247442
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
+  m_GameObject: {fileID: 5887013884261377791}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -80,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8792453, g: 0.2637735, b: 0.2637735, a: 1}
+  m_Sprite: {fileID: 7189042935056614310, guid: 873a2ed462433fe489cbdde7b9d415a2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,27 +88,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4897818243373534536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b980b38809a4d6459d194e23b619153, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathEffect: {fileID: 7271039455280795760, guid: e851eab27402df74fb53c799567194cb, type: 3}
-  medkit: {fileID: 5887013884261377791, guid: 3df65954c3c0af848a626ce47ef2328e, type: 3}
---- !u!61 &3769682272702154506
+--- !u!61 &8013828054503468377
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
+  m_GameObject: {fileID: 5887013884261377791}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -143,40 +126,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.39, y: 2.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.39, y: 2.8}
   m_EdgeRadius: 0
---- !u!114 &413267211908270523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5c26a3ab200fd48b1b3aa3c0bc5fe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invincibleTime: 0.5
-  numOfFlashes: 2
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &-8614089180778733449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918595099416652329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1515701bc62df648899ebe29174648f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hit: 0
-  isFlashing: 0

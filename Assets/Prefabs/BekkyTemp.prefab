@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4983539561431306321}
   - component: {fileID: 8497463065231958893}
   - component: {fileID: 7178720362234528957}
-  - component: {fileID: 6118542585671486396}
+  - component: {fileID: -1100381930414669018}
   m_Layer: 0
   m_Name: BekkyTemp
   m_TagString: Player
@@ -218,7 +218,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6118542585671486396
+--- !u!114 &-1100381930414669018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7eb124bc4afb1d43812ad34898c27cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  numOfHearts: 0
+  health: 3
+  numOfHearts: 3
   heart: []
   fullHeart: {fileID: 0}
   emptyHeart: {fileID: 0}

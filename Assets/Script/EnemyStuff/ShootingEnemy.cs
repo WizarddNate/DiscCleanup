@@ -12,6 +12,7 @@ public class ShootingEnemy : MonoBehaviour
     public float range = 10f;
     public GameObject bullet;
     public Transform bulletPos;
+    public GameObject medkit;
     GameObject player;
     EnemyManager enemyManager;
 
@@ -73,6 +74,11 @@ public class ShootingEnemy : MonoBehaviour
         }
         if (health <= 0)
         {
+            int RNG = Random.Range(1, 21);
+            if (RNG >= 15)
+            {
+                Instantiate(medkit, transform.position, Quaternion.identity);
+            }
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             enemyManager.total -= 1;
             Object.Destroy(gameObject);
