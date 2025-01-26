@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
 
 
+
     private void Awake()
     {
         if (instance == null)
@@ -26,8 +27,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadSceneAsync(sceneName);
-    }
 }
