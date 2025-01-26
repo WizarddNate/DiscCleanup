@@ -6,9 +6,22 @@ public class GunContainerScript : MonoBehaviour
 
     public GameObject gunContainer;
 
+    private GameObject gun;
+
+
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Gun")) ;
+        {
+            //possibly unneeded code
+        }
     }
 
     void Update()
@@ -23,12 +36,17 @@ public class GunContainerScript : MonoBehaviour
         //Debug.Log("Destroy children function successfully called!");
 
         Object.Destroy(gunContainer.transform.GetChild(0).gameObject);
-        //while (transform.childCount > 0)
-        //{
-        //    Debug.Log("script called!");
-        //    DestroyImmediate(transform.GetChild(0).gameObject);
-        //}
+        SwapGun();
 
+    }
+
+
+    //what is this doing? 
+    public void SwapGun()
+    {
+        GameObject newGun = GameObject.FindWithTag("Gun");
+        Object.Instantiate(newGun, gunContainer.transform.position, gunContainer.transform.rotation);
+        newGun.transform.SetParent(gunContainer.transform);
     }
 }
 

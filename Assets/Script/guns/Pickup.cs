@@ -22,6 +22,7 @@ public class Pickup : MonoBehaviour
 
     private void Start()
     {
+
         if (!gunEquipped)
         {
             //BasicGun.enabled = false;
@@ -45,8 +46,8 @@ public class Pickup : MonoBehaviour
 
     private void PickUp()
     {
-        //become child of gun container
-        gameObject.transform.SetParent(parentContainer.transform);
+        //become child of gun container variable
+        gameObject.transform.SetParent(parentContainer.transform); //instead of getting a variable, could i search the scene for the tag "gunContainer"? 
         gameObject.transform.localPosition = new Vector3(0, 0, -2);
 
         //gun isBeingHeld = true 
@@ -62,11 +63,11 @@ public class Pickup : MonoBehaviour
 
     private void DestroyOldGun()
     {
-        //call function in gun container to destroy all children
-        gunContainter.DestroyAllChildren();
-
         //equipped = false
         gunEquipped = false;
+
+        //call function in gun container to destroy all children
+        gunContainter.DestroyAllChildren(); //how to call this without needing the variable, or hardcoding the game object in question in?
 
 
         //Debug.Log("Old Gun Destroyed");

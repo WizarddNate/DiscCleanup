@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Shotgun
   - ChargeGun
+  - GunContainer
   layers:
   - Default
   - TransparentFX

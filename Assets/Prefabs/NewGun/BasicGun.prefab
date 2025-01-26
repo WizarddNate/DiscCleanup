@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 7026395250577523680}
   - component: {fileID: 8988364553969865437}
   - component: {fileID: 633161169345709824}
-  - component: {fileID: 894689551998908610}
   - component: {fileID: 11853546970828734}
   - component: {fileID: 2355226565935136042}
   m_Layer: 0
@@ -159,9 +158,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.33773577, g: 0.7660384, b: 1, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: -4314779100976405458, guid: 20c2c88018a0850428c413e1a4d36b95, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -190,22 +189,6 @@ MonoBehaviour:
   timeBetweenShots: 0
   source: {fileID: 2355226565935136042}
   clip: {fileID: 8300000, guid: dca9ccee051111448a06334481dd7be9, type: 3}
---- !u!114 &894689551998908610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095431336783011978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f52d3f5b4b950dc43bdb977bb0eca793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentContainer: {fileID: 0}
-  gunContainter: {fileID: 0}
-  gun: {fileID: 633161169345709824}
-  collider: {fileID: 11853546970828734}
 --- !u!61 &11853546970828734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -244,7 +227,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.5117648, y: 0.81764704}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
