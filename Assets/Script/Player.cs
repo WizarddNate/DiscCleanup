@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] public Color flashColor;
     //bool isFacingLeft = false;
 
+    public Animator animator;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -37,6 +39,9 @@ public class Player : MonoBehaviour
 
         //get horizontal movement input to be able to flip the character
         inputHorizontal = Input.GetAxisRaw("Horizontal");
+
+        //start walking animation once movement speed increases
+        animator.SetFloat("Speed", Mathf.Abs(inputHorizontal));
 
         if (inputHorizontal > 0) //move right
         {

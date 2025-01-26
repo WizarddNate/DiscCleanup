@@ -374,19 +374,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalPosition.y
@@ -435,6 +435,18 @@ PrefabInstance:
     - target: {fileID: 4983539561431306321, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.b
+      value: 0.0065265317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.g
+      value: 0.0065265317
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.r
+      value: 0.69182384
       objectReference: {fileID: 0}
     - target: {fileID: 5839815188714937862, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_FlipX
