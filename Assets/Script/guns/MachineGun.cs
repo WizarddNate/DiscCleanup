@@ -27,6 +27,8 @@ public class MachineGun : MonoBehaviour
     float timer;
     public float timeBetweenShots;
     BubbleBulletScript damage;
+    public AudioSource source;
+    public AudioClip clip;
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -55,6 +57,7 @@ public class MachineGun : MonoBehaviour
             //spawn bullets
             if (Input.GetMouseButton(0) && canFire)
             {
+                source.PlayOneShot(clip);
                 bulletPrefab.transform.localScale = new Vector3(.2f, .2f, .2f);
                 damage.SetDamage(2.5f);
                 Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);

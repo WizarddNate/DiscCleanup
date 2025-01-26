@@ -28,6 +28,9 @@ public class BasicGun : MonoBehaviour
     public bool canFire = true;
     private float timer = 0;
     public float timeBetweenShots = .5f;
+
+    public AudioSource source;
+    public AudioClip clip;
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -67,6 +70,7 @@ public class BasicGun : MonoBehaviour
             {
                 if (canFire)
                 {
+                    source.PlayOneShot(clip);
                     bulletPrefab.transform.localScale = new Vector3(.5f, .5f, .5f);
                     damage.SetDamage(5f);
                     Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
