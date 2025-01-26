@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 20c2c88018a0850428c413e1a4d36b95
+guid: daad13fc5c77e0040911f75d8824e5e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4314779100976405458
-    second: Scene Girl Gun_01_0
+      213: -2956159974637269428
+    second: Scene Girl Gun_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scene Girl Gun_01_0
+      name: Scene Girl Gun_02_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 257
-        height: 139
+        width: 222
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e24a502b443de14c0800000000000000
-      internalID: -4314779100976405458
+      spriteID: c4e848c5a2c99f6d0800000000000000
+      internalID: -2956159974637269428
       vertices: []
       indices: 
       edges: []
@@ -134,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scene Girl Gun_02_0: -2956159974637269428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

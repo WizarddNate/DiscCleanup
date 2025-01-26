@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e4dd2a9f606f2c24c9ad56cfd51cabee
+guid: 4381296f2f2e531469ec763f8b426c1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5313404668119516535
-    second: Scene Girl Windows_08_0
+      213: 4117890484117582108
+    second: Scene Girl Windows_07_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scene Girl Windows_08_0
+      name: Scene Girl Windows_07_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 26
-        width: 1834
-        height: 937
+        x: 50
+        y: 31
+        width: 1820
+        height: 939
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98a75d02b9ef246b0800000000000000
-      internalID: -5313404668119516535
+      spriteID: c113ac9e39fa52930800000000000000
+      internalID: 4117890484117582108
       vertices: []
       indices: 
       edges: []
@@ -134,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scene Girl Windows_07_0: 4117890484117582108
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
