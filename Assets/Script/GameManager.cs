@@ -5,10 +5,11 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+    private 
 
 
 
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
         {

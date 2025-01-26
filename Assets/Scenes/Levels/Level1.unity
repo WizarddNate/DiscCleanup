@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentContainer: {fileID: 1538972225}
-  gunContainter: {fileID: 1538972226}
+  gcs: {fileID: 0}
   gun: {fileID: 662511397}
   collider: {fileID: 662511395}
 --- !u!1 &762503470
