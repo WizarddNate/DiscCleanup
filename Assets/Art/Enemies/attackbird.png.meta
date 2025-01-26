@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: a5d5ff2ad29b1d642a6a8ebe181cdbf7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4153739737131913915
+    second: attackbird_0
+  - first:
+      213: 2849561696785515445
+    second: attackbird_1
+  - first:
+      213: 4567095367218797487
+    second: attackbird_2
+  - first:
+      213: 5257741851573456409
+    second: attackbird_3
+  - first:
+      213: 1316220543995289995
+    second: attackbird_4
+  - first:
+      213: 8893952538475690398
+    second: attackbird_5
+  - first:
+      213: -3137243408519833794
+    second: attackbird_6
+  - first:
+      213: 2464106470930544463
+    second: attackbird_7
+  - first:
+      213: 4759803201334296242
+    second: attackbird_8
+  - first:
+      213: 7308235654689496343
+    second: attackbird_9
+  - first:
+      213: 6415405392756096760
+    second: attackbird_10
+  - first:
+      213: -874708611650240699
+    second: attackbird_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attackbird_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1029
+        width: 341
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb21c21984c05a930800000000000000
+      internalID: 4153739737131913915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1029
+        width: 295
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b3c57ef34dab8720800000000000000
+      internalID: 2849561696785515445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_2
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1029
+        width: 304
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab986af905916f30800000000000000
+      internalID: 4567095367218797487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_3
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 1025
+        width: 285
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e8db77b5047f840800000000000000
+      internalID: 5257741851573456409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 518
+        width: 326
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8129e27c97244210800000000000000
+      internalID: 1316220543995289995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 521
+        width: 338
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99f60926baad6b70800000000000000
+      internalID: 8893952538475690398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_6
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 524
+        width: 437
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e375d35edb54674d0800000000000000
+      internalID: -3137243408519833794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_7
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 525
+        width: 436
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f477e88a7c3423220800000000000000
+      internalID: 2464106470930544463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 15
+        width: 431
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be3c480bc73e0240800000000000000
+      internalID: 4759803201334296242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_9
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 13
+        width: 431
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d9c947b911c6560800000000000000
+      internalID: 7308235654689496343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_10
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 13
+        width: 359
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe3a55e639180950800000000000000
+      internalID: 6415405392756096760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attackbird_11
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 5
+        width: 295
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fbc90f6296cd3f0800000000000000
+      internalID: -874708611650240699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      attackbird_0: 4153739737131913915
+      attackbird_1: 2849561696785515445
+      attackbird_10: 6415405392756096760
+      attackbird_11: -874708611650240699
+      attackbird_2: 4567095367218797487
+      attackbird_3: 5257741851573456409
+      attackbird_4: 1316220543995289995
+      attackbird_5: 8893952538475690398
+      attackbird_6: -3137243408519833794
+      attackbird_7: 2464106470930544463
+      attackbird_8: 4759803201334296242
+      attackbird_9: 7308235654689496343
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
