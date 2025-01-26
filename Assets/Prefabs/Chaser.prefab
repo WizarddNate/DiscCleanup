@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 2824108038830859297}
   - component: {fileID: 4897818243373534536}
   - component: {fileID: 3769682272702154506}
+  - component: {fileID: 413267211908270523}
+  - component: {fileID: -8614089180778733449}
   m_Layer: 0
   m_Name: Chaser
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,9 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b980b38809a4d6459d194e23b619153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  speed: 0
-  player: {fileID: 7602343317897297754, guid: ac34f56820afd7a47b19fbc6df38b900, type: 3}
+  deathEffect: {fileID: 7271039455280795760, guid: e851eab27402df74fb53c799567194cb, type: 3}
 --- !u!61 &3769682272702154506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,3 +150,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &413267211908270523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6918595099416652329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5c26a3ab200fd48b1b3aa3c0bc5fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invincibleTime: 0.5
+  numOfFlashes: 2
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-8614089180778733449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6918595099416652329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1515701bc62df648899ebe29174648f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hit: 0
+  isFlashing: 0

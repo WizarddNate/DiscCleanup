@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class BasicGun : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BasicGun : MonoBehaviour
     public float rotateSpeed = 1.0f;
     Vector2 velocity;
 
+    //look for maincam tag
     Camera mainCam;
 
     //position of the mouse
@@ -23,12 +25,12 @@ public class BasicGun : MonoBehaviour
     //check if gun is being actively held
     private bool isGunBeingHeld;
 
+
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         isGunBeingHeld = false;
-
-}
+    }
 
     private void Update()
     {
@@ -55,6 +57,13 @@ public class BasicGun : MonoBehaviour
             }
         }
     }
+
+    //public void ReloadCam()
+    //{
+    //    Debug.Log("Scene has loaded");
+    //    mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+    //}
+
 
     public void Activate()
     {

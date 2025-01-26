@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: fd53dbcac30e2814fa325fbedc45cbb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8295448597182879395
+    second: bekky_0
+  - first:
+      213: 859715187240130345
+    second: bekky_1
+  - first:
+      213: 5475319761426283833
+    second: bekky_2
+  - first:
+      213: -5259114007215656919
+    second: bekky_3
+  - first:
+      213: -4317081849210973229
+    second: bekky_4
+  - first:
+      213: -148903335901186033
+    second: bekky_5
+  - first:
+      213: -7887414803865925662
+    second: bekky_6
+  - first:
+      213: 3390482212935651743
+    second: bekky_7
+  - first:
+      213: 3948765652353460863
+    second: bekky_8
+  - first:
+      213: -4519299014993798563
+    second: bekky_9
+  - first:
+      213: 2460209776921811629
+    second: bekky_10
+  - first:
+      213: -6323742199698317287
+    second: bekky_11
+  - first:
+      213: -8286045647285242805
+    second: bekky_12
+  - first:
+      213: -4267269599891357932
+    second: bekky_13
+  - first:
+      213: -7200869741226677724
+    second: bekky_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bekky_0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1584
+        width: 198
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59e668b375a0ec80800000000000000
+      internalID: -8295448597182879395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1582
+        width: 211
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927d47768625eeb00800000000000000
+      internalID: 859715187240130345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_2
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1583
+        width: 221
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d7d73405e3cfb40800000000000000
+      internalID: 5475319761426283833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_3
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1578
+        width: 241
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92031a6acafd307b0800000000000000
+      internalID: -5259114007215656919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1068
+        width: 269
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d35e775ee4a614c0800000000000000
+      internalID: -4317081849210973229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_5
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1068
+        width: 247
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f083db5743dfeedf0800000000000000
+      internalID: -148903335901186033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_6
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1070
+        width: 202
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e70a6376064a8290800000000000000
+      internalID: -7887414803865925662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_7
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 1072
+        width: 198
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f915f4feb996d0f20800000000000000
+      internalID: 3390482212935651743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 558
+        width: 211
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7aaac97075dcc630800000000000000
+      internalID: 3948765652353460863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_9
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 559
+        width: 221
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a95897d793841c0800000000000000
+      internalID: -4519299014993798563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_10
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 554
+        width: 241
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa1e52e1cb642220800000000000000
+      internalID: 2460209776921811629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_11
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 556
+        width: 269
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910a5d759fd8d38a0800000000000000
+      internalID: -6323742199698317287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_12
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 44
+        width: 247
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4434e8926d020d80800000000000000
+      internalID: -8286045647285242805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_13
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 46
+        width: 202
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ff6a968ec97c4c0800000000000000
+      internalID: -4267269599891357932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bekky_14
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 48
+        width: 198
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a23584f1f511c90800000000000000
+      internalID: -7200869741226677724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bekky_0: -8295448597182879395
+      bekky_1: 859715187240130345
+      bekky_10: 2460209776921811629
+      bekky_11: -6323742199698317287
+      bekky_12: -8286045647285242805
+      bekky_13: -4267269599891357932
+      bekky_14: -7200869741226677724
+      bekky_2: 5475319761426283833
+      bekky_3: -5259114007215656919
+      bekky_4: -4317081849210973229
+      bekky_5: -148903335901186033
+      bekky_6: -7887414803865925662
+      bekky_7: 3390482212935651743
+      bekky_8: 3948765652353460863
+      bekky_9: -4519299014993798563
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

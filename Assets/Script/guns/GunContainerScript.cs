@@ -6,10 +6,17 @@ public class GunContainerScript : MonoBehaviour
 
     public GameObject gunContainer;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Update()
     {
         //Make ObjectA's position match objectB
          gameObject.transform.position = Player.position;
+
+        
     }
     public void DestroyAllChildren()
     {

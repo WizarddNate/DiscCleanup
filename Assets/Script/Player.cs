@@ -1,3 +1,4 @@
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,19 +6,27 @@ public class Player : MonoBehaviour
 {
 
     public float moveSpeed = 5.0f;
-
+    int health = 3;
     Rigidbody2D rb;
     Vector2 velocity;
     float inputHorizontal; //used to flip sprite
 
     public GameObject gunPrefab;
 
+    SpriteFlasher flasher;
+    [SerializeField] public Color flashColor;
     //bool isFacingLeft = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        flasher = GetComponent<SpriteFlasher>();
     }
 
     // Update is called once per frame
@@ -31,11 +40,11 @@ public class Player : MonoBehaviour
 
         if (inputHorizontal > 0) //move right
         {
-            gameObject.transform.localScale = new Vector3(1, 2, 1);
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
         if (inputHorizontal < 0) //move left
         {
-            gameObject.transform.localScale = new Vector3(-1, 2, 1);
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
@@ -43,4 +52,30 @@ public class Player : MonoBehaviour
     {
 
     }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other == null)
+        {
+            Debug.Log("SHDIH");
+        }
+        if (other.CompareTag("EnemyBullet") && !flasher.isFlashing)
+        {
+            
+            health -= 1;
+            StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
+            Object.Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Enemy") && !flasher.isFlashing)
+        {
+            health -= 1;
+            StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
+        }
+        if (health <= 0)
+        {
+            Debug.Log("DEAD");
+        }
+    }
+    
 }
