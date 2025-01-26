@@ -48,6 +48,7 @@ public class Pickup : MonoBehaviour
     {
         //become child of gun container
         gameObject.transform.SetParent(parentContainer.transform);
+        gameObject.transform.localPosition = Vector3.zero;
 
         //gun isBeingHeld = true 
         basicGun.Activate();
