@@ -53,10 +53,6 @@ public class Player : MonoBehaviour
         {
             gameObject.transform.localScale = new Vector3(-1, 1, 1);
         }
-        if (health.health <= 0)
-        {
-            Debug.Log("DEAD");
-        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -73,7 +69,10 @@ public class Player : MonoBehaviour
             health.health -= 1;
             StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
         }
-        
+        if (health.health <= 0)
+        {
+            Debug.Log("DEAD");
+        }
     }
     
 }

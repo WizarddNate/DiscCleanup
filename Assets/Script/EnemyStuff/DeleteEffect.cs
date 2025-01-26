@@ -9,7 +9,7 @@ public class DeleteEffect : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 1.5f)
+        if (timer > 3)
         {
             Object.Destroy(gameObject);
         }
