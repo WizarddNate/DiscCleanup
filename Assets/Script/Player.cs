@@ -1,7 +1,7 @@
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
         }
         if (health.health <= 0)
         {
-            Debug.Log("DEAD");
+            SceneManager.LoadScene("MainMenu");
         }
     }
     
