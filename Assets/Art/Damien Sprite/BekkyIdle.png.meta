@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BekkyIdle_0: -1945583576595028625
+      BekkyIdle_1: -7280352829985750394
+      BekkyIdle_2: -862138906406153209
+      BekkyIdle_3: -7685518463310006327
+      BekkyIdle_4: -6448680769128026226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
