@@ -22,16 +22,16 @@ public class EnemyManager : MonoBehaviour
         {
             if (child.gameObject.tag == "Enemy")
             {
-                total = enemiesList.Count;
                 enemiesList.Add(child.gameObject);
                 //Debug.Log("Enemy counted");
             }
         }
+        total = enemiesList.Count;
     }
 
     private void Update()
     {
-        
+        Debug.Log($"there are {total} enemies.");
         //Debug.Log($"count: {enemiesList.Count}");
         if (total <= 0)
         {
