@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scene Girl Button_01_0: 8653047865158255199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
