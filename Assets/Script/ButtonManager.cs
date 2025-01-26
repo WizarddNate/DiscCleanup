@@ -8,12 +8,22 @@ public class ButtonManager : MonoBehaviour
     //Start the game
     public void StartGame()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync("Level1");
     }
 
     //Guess what this does
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    public void TrapButton()
+    {
+        SceneManager.LoadSceneAsync("IntroVideo");
     }
 }

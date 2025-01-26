@@ -50,7 +50,7 @@ public class Pickup : MonoBehaviour
     private void PickUp()
     {
         //become child of gun container variable
-        gameObject.transform.SetParent(parentContainer.transform); //instead of getting a variable, could i search the scene for the tag "gunContainer"? 
+        gameObject.transform.SetParent(parentContainer.transform);
         gameObject.transform.localPosition = new Vector3(0, 0, -2);
 
         //gun isBeingHeld = true 
