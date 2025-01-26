@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
 
     public float moveSpeed = 5.0f;
-    int health = 3;
+    int hearts = 3;
     Rigidbody2D rb;
     Vector2 velocity;
     float inputHorizontal; //used to flip sprite
@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
 
     SpriteFlasher flasher;
     [SerializeField] public Color flashColor;
+    Health health;
     //bool isFacingLeft = false;
 
     public Animator animator;
@@ -22,6 +23,8 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
+        health = GetComponent<Health>();
+        health.health = hearts;
     }
 
     void Start()
@@ -53,31 +56,21 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void PickupGun(GameObject obj)
-    {
-
-    }
-
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == null)
-        {
-            Debug.Log("SHDIH");
-        }
         if (other.CompareTag("EnemyBullet") && !flasher.isFlashing)
         {
-            
-            health -= 1;
+
+            health.health -= 1;
             StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
             Object.Destroy(other.gameObject);
         }
         else if (other.CompareTag("Enemy") && !flasher.isFlashing)
         {
-            health -= 1;
+            health.health -= 1;
             StartCoroutine(flasher.Flash(1.5f, flashColor, 3f));
         }
-        if (health <= 0)
+        if (health.health <= 0)
         {
             Debug.Log("DEAD");
         }

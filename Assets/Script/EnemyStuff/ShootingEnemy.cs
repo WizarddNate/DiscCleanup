@@ -13,6 +13,7 @@ public class ShootingEnemy : MonoBehaviour
     public GameObject bullet;
     public Transform bulletPos;
     GameObject player;
+    EnemyManager enemyManager;
 
     float timer;
 
@@ -23,6 +24,7 @@ public class ShootingEnemy : MonoBehaviour
         health = stats.stats["chaser"]["health"];
         speed = stats.stats["chaser"]["speed"];
         flasher = GetComponent<SpriteFlasher>();
+        enemyManager = FindAnyObjectByType<EnemyManager>();
     }
 
     private void Update()
@@ -59,6 +61,7 @@ public class ShootingEnemy : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
+            enemyManager.total -= 1;
             Object.Destroy(gameObject);
         }
     }
