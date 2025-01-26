@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 14b1695e8fe7f2245aba7b8b05592d50
+guid: 5b4261f425a24204cbdf432432b2ccc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8590106182670111763
-    second: winbox_0
+      213: -7398654439024436590
+    second: BekkyIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: winbox_0
+      name: BekkyIcon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 285
-        height: 148
+        width: 900
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: debaf0f60ffc9c880800000000000000
-      internalID: -8590106182670111763
+      spriteID: 29ad41accf2b25990800000000000000
+      internalID: -7398654439024436590
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      winbox_0: -8590106182670111763
+      BekkyIcon_0: -7398654439024436590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
