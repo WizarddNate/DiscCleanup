@@ -9,10 +9,10 @@ public class Enemy : MonoBehaviour
     float speed;
     public GameObject deathEffect;
     SpriteFlasher flasher;
-
+    EnemyManager enemyManager;
     void Start()
     {
-
+        enemyManager = FindAnyObjectByType<EnemyManager>();
         player = GameObject.FindGameObjectWithTag("Player");
         stats = GetComponent<EnemyStats>();
         health = stats.stats["chaser"]["health"];
@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
+            enemyManager.total -= 1;
             Object.Destroy(gameObject);
         }
     }
