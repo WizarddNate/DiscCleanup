@@ -1,8 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
-public class BasicGun : MonoBehaviour
+public class MachineGun : MonoBehaviour
 {
     // vars //
 
@@ -24,11 +22,11 @@ public class BasicGun : MonoBehaviour
 
     //check if gun is being actively held
     private bool isGunBeingHeld;
+    
+    private bool canFire = true;
+    float timer;
+    public float timeBetweenShots;
     BubbleBulletScript damage;
-    public bool canFire = true;
-    private float timer = 0;
-    public float timeBetweenShots = .5f;
-
     public AudioSource source;
     public AudioClip clip;
     public void Start()
@@ -36,6 +34,7 @@ public class BasicGun : MonoBehaviour
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         isGunBeingHeld = false;
         damage = bulletPrefab.GetComponent<BubbleBulletScript>();
+        
     }
 
     private void Update()
@@ -54,7 +53,16 @@ public class BasicGun : MonoBehaviour
             Vector3 rotation = mousePos - transform.position;
             float rot2 = Mathf.Atan2(-rotation.x, rotation.y) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rot2 + 90);
-            
+
+            //spawn bullets
+            if (Input.GetMouseButton(0) && canFire)
+            {
+                source.PlayOneShot(clip);
+                bulletPrefab.transform.localScale = new Vector3(.2f, .2f, .2f);
+                damage.SetDamage(2.5f);
+                Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+                canFire = false;
+            }
             if (!canFire)
             {
                 timer += Time.deltaTime;
@@ -64,33 +72,10 @@ public class BasicGun : MonoBehaviour
                     timer = 0f;
                 }
             }
-
-            //spawn bullets
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (canFire)
-                {
-                    source.PlayOneShot(clip);
-                    bulletPrefab.transform.localScale = new Vector3(.5f, .5f, .5f);
-                    damage.SetDamage(5f);
-                    Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
-                    canFire = false;
-                }
-            }
         }
     }
-
-    //public void ReloadCam()
-    //{
-    //    Debug.Log("Scene has loaded");
-    //    mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-    //}
-
-
     public void Activate()
     {
         isGunBeingHeld = true;
     }
-
 }
-

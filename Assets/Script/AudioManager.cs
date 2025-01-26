@@ -5,9 +5,21 @@ public class AudioManager : MonoBehaviour
 {
     //GameObject oneshot
 
-    //private void Update()
-    //{
-    //    if isPlaying
-    //}
+    [Header("-------- Audio Clip --------")]
+    public AudioClip goBekkyGoStart;
+    public AudioClip goBekkyGoLoop;
+    public AudioClip bubbleRifle;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        musicSource.clip = goBekkyGoLoop;
+        musicSource.Play();
+    }
+  
 }
 
