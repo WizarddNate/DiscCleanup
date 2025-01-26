@@ -23,14 +23,13 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
-        health = GetComponent<Health>();
-        health.health = hearts;
     }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        health = GetComponent<Health>();
+        health.health = hearts;
         flasher = GetComponent<SpriteFlasher>();
     }
 
