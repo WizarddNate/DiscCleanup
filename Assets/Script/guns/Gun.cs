@@ -26,6 +26,7 @@ public class Gun : MonoBehaviour
     public bool canFire = true;
     private float timer;
     public float timeBetweenShots;
+    public GameObject bang;
 
     public AudioSource source;
     public AudioClip clip;
@@ -45,11 +46,11 @@ public class Gun : MonoBehaviour
             float rot2 = Mathf.Atan2(-rotation.x, rotation.y) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rot2 + 90);
 
-            if(gameObject.tag == "Gun" && Input.GetMouseButtonDown(0))
+            if(gameObject.tag == "Gun" & Input.GetMouseButtonDown(0))
             {
                 Shoot(5f, .5f, 0f);
             }
-            else if(gameObject.tag == "Shotgun" && Input.GetMouseButton(0)) 
+            else if(gameObject.tag == "Shotgun" & Input.GetMouseButton(0)) 
             {
                 Shoot(2.5f, .2f, .25f);
             }
@@ -66,11 +67,13 @@ public class Gun : MonoBehaviour
         timer += Time.deltaTime;
         if (canFire)
         {
+            //Debug.Log("bang");
+            canFire = false;
             source.PlayOneShot(clip);
             bulletPrefab.transform.localScale = new Vector3(size, size, size);
             damage.SetDamage(hurt);
             Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
-            canFire = false;
+            Instantiate(bang, shootingPoint.position, transform.rotation);
         }
         else
         {
