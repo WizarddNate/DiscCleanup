@@ -24,12 +24,15 @@ public class BasicGun : MonoBehaviour
 
     //check if gun is being actively held
     private bool isGunBeingHeld;
-
-
+    BubbleBulletScript damage;
+    public bool canFire = true;
+    private float timer = 0;
+    public float timeBetweenShots = .5f;
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         isGunBeingHeld = false;
+        damage = bulletPrefab.GetComponent<BubbleBulletScript>();
     }
 
     private void Update()
@@ -48,13 +51,27 @@ public class BasicGun : MonoBehaviour
             Vector3 rotation = mousePos - transform.position;
             float rot2 = Mathf.Atan2(-rotation.x, rotation.y) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rot2 + 90);
+            
+            if (!canFire)
+            {
+                timer += Time.deltaTime;
+                if (timer > timeBetweenShots)
+                {
+                    canFire = true;
+                    timer = 0f;
+                }
+            }
 
             //spawn bullets
             if (Input.GetMouseButtonDown(0))
             {
-                bulletPrefab.transform.localScale = new Vector3(.5f, .5f, .5f);
-                //instantiate(instantiated game object, spawn point, rotation)
-                Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+                if (canFire)
+                {
+                    bulletPrefab.transform.localScale = new Vector3(.5f, .5f, .5f);
+                    damage.SetDamage(5f);
+                    Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+                    canFire = false;
+                }
             }
         }
     }

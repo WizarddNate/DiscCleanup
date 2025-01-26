@@ -20,7 +20,7 @@ public class GunContainerScript : MonoBehaviour
     }
     public void DestroyAllChildren()
     {
-        Debug.Log("Destroy children function successfully called!");
+        //Debug.Log("Destroy children function successfully called!");
 
         Object.Destroy(gunContainer.transform.GetChild(0).gameObject);
         //while (transform.childCount > 0)

@@ -50,8 +50,10 @@ public class ShootingEnemy : MonoBehaviour
         if (other.CompareTag("PlayerBullet") && !flasher.isFlashing)
         {
             //Debug.Log("HIT");
+            BubbleBulletScript bullet = other.gameObject.GetComponent<BubbleBulletScript>();
+            float damage = bullet.damage;
             StartCoroutine(flasher.Flash(stats.invincibleTime, stats.flashColor, stats.numOfFlashes));
-            health -= 5;
+            health -= damage;
             Object.Destroy(other.gameObject);
         }
         if (health <= 0)

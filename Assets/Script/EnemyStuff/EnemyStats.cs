@@ -9,7 +9,7 @@ public class EnemyStats : MonoBehaviour
                 "chaser",
                 new Dictionary<string , float>
                 {
-                    {"health", 10f },
+                    {"health", 20f },
                     {"speed", 3.5f}
                 }
             },

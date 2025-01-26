@@ -41,7 +41,7 @@ public class Pickup : MonoBehaviour
             //disable box collider
             collider.enabled = false;
             PickUp();
-            Debug.Log("pick up!");
+            //Debug.Log("pick up!");
         }
     }
 

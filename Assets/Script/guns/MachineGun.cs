@@ -26,11 +26,13 @@ public class MachineGun : MonoBehaviour
     private bool canFire = true;
     float timer;
     public float timeBetweenShots;
-
+    BubbleBulletScript damage;
     public void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         isGunBeingHeld = false;
+        damage = bulletPrefab.GetComponent<BubbleBulletScript>();
+        
     }
 
     private void Update()
@@ -54,6 +56,7 @@ public class MachineGun : MonoBehaviour
             if (Input.GetMouseButton(0) && canFire)
             {
                 bulletPrefab.transform.localScale = new Vector3(.2f, .2f, .2f);
+                damage.SetDamage(2.5f);
                 Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
                 canFire = false;
             }
