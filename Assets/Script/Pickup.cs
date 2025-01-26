@@ -13,9 +13,7 @@ public class Pickup : MonoBehaviour
     public GunContainerScript gunContainter;
 
     //reference basic gun script
-    public BasicGun basicGun;
-
-    public MachineGun machineGun;
+    public Gun gun;
     //box gun's collider
     public BoxCollider2D collider;
 
@@ -52,14 +50,11 @@ public class Pickup : MonoBehaviour
         gameObject.transform.localPosition = new Vector3(0, 0, -2);
 
         //gun isBeingHeld = true 
-        if (gameObject.CompareTag("Gun"))
+        if (gameObject.CompareTag("Gun") || gameObject.CompareTag("Shotgun"))
         {
-            basicGun.Activate();
+            gun.Activate();
         }
-        else if (gameObject.CompareTag("Shotgun"))
-        {
-            machineGun.Activate();
-        }
+        
 
         //equipped = true
         gunEquipped = true;

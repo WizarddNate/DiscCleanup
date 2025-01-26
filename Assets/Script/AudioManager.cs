@@ -15,12 +15,7 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-       // musicSource.clip = goBekkyGoLoop;
-       //musicSource.clip = goBekkyGoLoop;
-       //musicSource.Play();
-    }
+
   
 }
 
