@@ -5,10 +5,11 @@ public class AudioManager : MonoBehaviour
 {
     //GameObject oneshot
 
-    [Header("-------- Audio Clip --------")]
-    public AudioClip goBekkyGoStart;
-    public AudioClip goBekkyGoLoop;
-    public AudioClip bubbleRifle;
+    public AudioSource songStart;
+    public AudioSource songLoop;
+
+    private float startLength;
+    //1.52
 
     private void Awake()
     {
@@ -16,8 +17,26 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        //hiiiii
+        songStart = GetComponent<AudioSource>();
+        songLoop = GetComponent<AudioSource>();
+
+        startLength = songStart.clip.length;
+        Debug.Log("song length: " + startLength);
+
+        songStart.Play(0);
     }
-  
+
+    private void Update()
+    {
+        if (startLength > 0)
+        {
+            startLength -= Time.deltaTime;
+        }
+        if (startLength <= 0)
+        {
+            songStart.Stop();
+            songLoop.Play(0);
+        }
+    }
 }
 
