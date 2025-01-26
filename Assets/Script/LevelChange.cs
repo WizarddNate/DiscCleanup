@@ -19,7 +19,7 @@ public class LevelChange : MonoBehaviour
             {
                 return;
             }
-            if (collision.CompareTag("PlayerBullet"))
+            if (collision.CompareTag("PlayerBullet") || collision.CompareTag("EnemyBullet"))
             {
                 return;
             }
