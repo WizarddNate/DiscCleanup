@@ -1056,6 +1056,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a4fec75aeb71e048a84556bedb2b9e8, type: 3}
+--- !u!1 &1195098932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8952079154640005917, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+  m_PrefabInstance: {fileID: 1435834524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1195098938
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195098932}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 726bc69eb02799f46b1e8ac6cabffbd4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1307815908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,15 +1155,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2354155364595672507, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1182,6 +1209,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4983539561431306321, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.1647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983539561431306321, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1195098938}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.b
+      value: 0.2925869
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.g
+      value: 0.17693122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224297033549904174, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: flashColor.r
+      value: 0.7924528
+      objectReference: {fileID: 0}
     - target: {fileID: 5839815188714937862, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -1209,7 +1260,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8952079154640005917, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1195098938}
   m_SourcePrefab: {fileID: 100100000, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
 --- !u!1 &1511699919
 GameObject:
@@ -1492,7 +1546,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1100213684334014207, guid: 58fc022ccdad3634596b790565da8654, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1257953089397632334, guid: 58fc022ccdad3634596b790565da8654, type: 3}
       propertyPath: m_LocalPosition.x
