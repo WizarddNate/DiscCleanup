@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Pickup : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Pickup : MonoBehaviour
     public GameObject parentContainer;
 
     //reference gun containter script
-    public GunContainerScript gunContainter;
+    public GunContainerScript gcs;
 
     //reference basic gun script
     public Gun gun;
@@ -22,6 +23,8 @@ public class Pickup : MonoBehaviour
 
     private void Start()
     {
+        gcs = FindFirstObjectByType<GunContainerScript>();
+        parentContainer = gcs.gameObject;
 
         if (!gunEquipped)
         {
@@ -67,7 +70,7 @@ public class Pickup : MonoBehaviour
         gunEquipped = false;
 
         //call function in gun container to destroy all children
-        gunContainter.DestroyAllChildren(); //how to call this without needing the variable, or hardcoding the game object in question in?
+        gcs.DestroyAllChildren(); //how to call this without needing the variable, or hardcoding the game object in question in?
 
 
         //Debug.Log("Old Gun Destroyed");
