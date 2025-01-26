@@ -5,41 +5,54 @@ public class DestroyLeftovers : MonoBehaviour
 {
     //camera
     public mainCamera mc;
-    public GameObject mcObject;
+    private GameObject mcObject;
 
     //gun container
     public GunContainerScript gcs;
-    public GameObject gcsObject;
+    private GameObject gcsObject;
 
     //player
     public Player ps;
-    public GameObject psObject;
+    private GameObject psObject;
 
     //theme song
     public AudioManager ams;
-    public GameObject amsObject;
+    private GameObject amsObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        //get game objects
-        mc = FindFirstObjectByType<mainCamera>();
-        mcObject = gcs.gameObject;
 
+        //get game objects
+
+        mc = FindFirstObjectByType<mainCamera>();
+        mcObject = mc.gameObject;
+        if (mc != null)
+        {
+            //destroy them.
+            Destroy(mcObject);
+        }
+        
         gcs = FindFirstObjectByType<GunContainerScript>();
         gcsObject = gcs.gameObject;
+        if (gcs != null)
+        {
+            Destroy(gcsObject);
+        }
 
         ps = FindFirstObjectByType<Player>();
         psObject = ps.gameObject;
+        if (ps != null)
+        {
+            Destroy(psObject);
+        }
 
         ams = FindFirstObjectByType<AudioManager>();
         amsObject = ams.gameObject;
-
-        //destroy them
-        Destroy(mcObject);
-        Destroy(gcsObject);
-        Destroy(psObject);
-        Destroy(amsObject);
+        if (ams != null)
+        {
+            Destroy(amsObject);
+        } 
     }
 
 }
