@@ -1,8 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
-public class BasicGun : MonoBehaviour
+public class MachineGun : MonoBehaviour
 {
     // vars //
 
@@ -24,7 +22,10 @@ public class BasicGun : MonoBehaviour
 
     //check if gun is being actively held
     private bool isGunBeingHeld;
-
+    
+    private bool canFire = true;
+    float timer;
+    public float timeBetweenShots;
 
     public void Start()
     {
@@ -50,26 +51,25 @@ public class BasicGun : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, rot2 + 90);
 
             //spawn bullets
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButton(0) && canFire)
             {
-                bulletPrefab.transform.localScale = new Vector3(.5f, .5f, .5f);
-                //instantiate(instantiated game object, spawn point, rotation)
+                bulletPrefab.transform.localScale = new Vector3(.2f, .2f, .2f);
                 Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+                canFire = false;
+            }
+            if (!canFire)
+            {
+                timer += Time.deltaTime;
+                if (timer > timeBetweenShots)
+                {
+                    canFire = true;
+                    timer = 0f;
+                }
             }
         }
     }
-
-    //public void ReloadCam()
-    //{
-    //    Debug.Log("Scene has loaded");
-    //    mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-    //}
-
-
     public void Activate()
     {
         isGunBeingHeld = true;
     }
-
 }
-
