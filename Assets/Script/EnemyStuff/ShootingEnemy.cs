@@ -12,6 +12,7 @@ public class ShootingEnemy : MonoBehaviour
     public float range = 10f;
     public GameObject bullet;
     public Transform bulletPos;
+    public GameObject medkit;
     GameObject player;
     EnemyManager enemyManager;
 
@@ -21,10 +22,23 @@ public class ShootingEnemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         stats = GetComponent<EnemyStats>();
-        health = stats.stats["chaser"]["health"];
-        speed = stats.stats["chaser"]["speed"];
         flasher = GetComponent<SpriteFlasher>();
         enemyManager = FindAnyObjectByType<EnemyManager>();
+        if (gameObject.name.Contains("Dog"))
+        {
+            health = stats.stats["Dog"]["health"];
+            speed = stats.stats["Dog"]["speed"];
+        }
+        else if (gameObject.name.Contains("Bug"))
+        {
+            health = stats.stats["Bug"]["health"];
+            speed = stats.stats["Bug"]["speed"];
+        }
+        else
+        {
+            health = stats.stats["default"]["health"];
+            speed = stats.stats["default"]["health"];
+        }
     }
 
     private void Update()
@@ -60,6 +74,11 @@ public class ShootingEnemy : MonoBehaviour
         }
         if (health <= 0)
         {
+            int RNG = Random.Range(1, 21);
+            if (RNG >= 15)
+            {
+                Instantiate(medkit, transform.position, Quaternion.identity);
+            }
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             enemyManager.total -= 1;
             Object.Destroy(gameObject);

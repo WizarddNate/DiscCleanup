@@ -11,6 +11,7 @@ TagManager:
   - Shotgun
   - ChargeGun
   - GunContainer
+  - Medkit
   layers:
   - Default
   - TransparentFX

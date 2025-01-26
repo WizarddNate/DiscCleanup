@@ -108,6 +108,7 @@ MonoBehaviour:
   range: 20
   bullet: {fileID: 4087803104060027304, guid: 309d846c22363b4448fa0fb92cc746e4, type: 3}
   bulletPos: {fileID: 9065089252453860871}
+  medkit: {fileID: 5887013884261377791, guid: 3df65954c3c0af848a626ce47ef2328e, type: 3}
 --- !u!114 &-489495673574238912
 MonoBehaviour:
   m_ObjectHideFlags: 0

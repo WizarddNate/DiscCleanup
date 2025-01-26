@@ -31,7 +31,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log($"there are {total} enemies.");
+        //Debug.Log($"there are {total} enemies.");
         //Debug.Log($"count: {enemiesList.Count}");
         if (total <= 0)
         {

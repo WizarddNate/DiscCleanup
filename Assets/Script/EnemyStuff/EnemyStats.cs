@@ -6,19 +6,43 @@ public class EnemyStats : MonoBehaviour
         new Dictionary<string, Dictionary<string, float>>
         {
             {
-                "chaser",
+                "Bird",
                 new Dictionary<string , float>
                 {
-                    {"health", 20f },
+                    {"health", 10f },
                     {"speed", 3.5f}
                 }
             },
             {
-                "shooting",
+                "Worm",
+                new Dictionary< string , float>
+                {
+                    {"health", 20f },
+                    {"speed", 1.5f}
+                }
+            },
+            {
+                "Bug",
                 new Dictionary< string , float>
                 {
                     {"health", 5f },
-                    {"speed", 2f}
+                    {"speed", 4f}
+                }
+            },
+            {
+                "Dog",
+                new Dictionary< string , float>
+                {
+                    {"health", 7.5f },
+                    {"speed", 1f}
+                }
+            },
+            {
+                "Default",
+                new Dictionary< string , float>
+                {
+                    {"health", 5f },
+                    {"speed", .2f}
                 }
             }
         };
