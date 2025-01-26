@@ -21,10 +21,23 @@ public class ShootingEnemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         stats = GetComponent<EnemyStats>();
-        health = stats.stats["chaser"]["health"];
-        speed = stats.stats["chaser"]["speed"];
         flasher = GetComponent<SpriteFlasher>();
         enemyManager = FindAnyObjectByType<EnemyManager>();
+        if (gameObject.name.Contains("Dog"))
+        {
+            health = stats.stats["Dog"]["health"];
+            speed = stats.stats["Dog"]["speed"];
+        }
+        else if (gameObject.name.Contains("Bug"))
+        {
+            health = stats.stats["Bug"]["health"];
+            speed = stats.stats["Bug"]["speed"];
+        }
+        else
+        {
+            health = stats.stats["default"]["health"];
+            speed = stats.stats["default"]["health"];
+        }
     }
 
     private void Update()
