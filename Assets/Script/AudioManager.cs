@@ -14,8 +14,10 @@ public class AudioManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
-
-
+    private void Start()
+    {
+        //hiiiii
+    }
   
 }
 
