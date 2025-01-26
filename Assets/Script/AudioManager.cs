@@ -17,7 +17,11 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+<<<<<<< HEAD
        // musicSource.clip = goBekkyGoLoop;
+=======
+        //musicSource.clip = goBekkyGoLoop;
+>>>>>>> origin/main
         //musicSource.Play();
     }
   

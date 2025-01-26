@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
 
     //bool for if the enemies have been cleared or not
     public bool isLevelBeat = false;
-
+    public int total;
     
 
 
@@ -22,8 +22,9 @@ public class EnemyManager : MonoBehaviour
         {
             if (child.gameObject.tag == "Enemy")
             {
+                total = enemiesList.Count;
                 enemiesList.Add(child.gameObject);
-                Debug.Log("Enemy counted");
+                //Debug.Log("Enemy counted");
             }
         }
     }
@@ -31,15 +32,14 @@ public class EnemyManager : MonoBehaviour
     private void Update()
     {
         
-        Debug.Log($"count: {enemiesList.Count}");
-        if (enemiesList.Count == 0)
+        //Debug.Log($"count: {enemiesList.Count}");
+        if (total == 0)
         {
             //when list is empty, levelBeat = true
             isLevelBeat = true;
         }
     }
     
-
     
 
 }
