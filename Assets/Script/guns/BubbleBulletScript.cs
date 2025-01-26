@@ -5,6 +5,7 @@ public class BubbleBulletScript : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
     public float destoryTimer;
+    public float damage;
 
     private void Start()
     {
@@ -23,6 +24,9 @@ public class BubbleBulletScript : MonoBehaviour
             Object.Destroy(gameObject);
         }
     }
-
+    public void SetDamage(float gunDamage)
+    {
+        damage = gunDamage;
+    }
     
 }

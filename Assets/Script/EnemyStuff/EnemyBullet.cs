@@ -6,6 +6,7 @@ public class EnemyBullet : MonoBehaviour
     GameObject player;
     Rigidbody2D rb;
     public float force = 5f;
+    float timer = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +24,10 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if (timer > 5)
+        {
+            Object.Destroy(gameObject);
+        }
     }
 }
