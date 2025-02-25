@@ -898,9 +898,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentContainer: {fileID: 1538972225}
-  gcs: {fileID: 0}
+  gcs: {fileID: 1538972226}
   gun: {fileID: 662511397}
-  collider: {fileID: 662511395}
+  gunCollider: {fileID: 662511395}
 --- !u!1 &762503470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1506,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2589945804206080013, guid: 29e1de44e17f8fe4fa28d3756bf07b27, type: 3}
+    - target: {fileID: 7167864711333264909, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8952079154640005917, guid: 547d16051f9777f4bbd8cbb46339e806, type: 3}
       propertyPath: m_Name
       value: BekkyTemp

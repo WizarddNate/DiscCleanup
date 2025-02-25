@@ -16,7 +16,7 @@ public class Pickup : MonoBehaviour
     //reference basic gun script
     public Gun gun;
     //box gun's collider
-    public BoxCollider2D collider;
+    public BoxCollider2D gunCollider;
 
     //check if a gun is already being held
     private static bool gunEquipped; 
@@ -41,7 +41,7 @@ public class Pickup : MonoBehaviour
                 DestroyOldGun();
             }
             //disable box collider
-            collider.enabled = false;
+            gunCollider.enabled = false;
             PickUp();
             //Debug.Log("pick up!");
         }

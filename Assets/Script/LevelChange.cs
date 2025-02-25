@@ -8,12 +8,11 @@ public class LevelChange : MonoBehaviour
     private void Start()
     {
         enemyManager = FindAnyObjectByType<EnemyManager>();
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) ; //&& isLevelBeat == true
+        if (collision.CompareTag("Player")) 
         {
             if (enemyManager.isLevelBeat == false)
             {

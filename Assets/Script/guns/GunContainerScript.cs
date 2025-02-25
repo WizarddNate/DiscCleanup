@@ -15,15 +15,6 @@ public class GunContainerScript : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Gun")) ;
-        {
-            //possibly unneeded code
-        }
-    }
-
     void Update()
     {
         //Make ObjectA's position match objectB
